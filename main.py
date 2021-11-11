@@ -17,6 +17,8 @@ else:
         
         values.append(seed)
 
+    fig = plt.gcf()
+    fig.canvas.set_window_title('Collatz conjecture - Seed =  ' + str(values[0]))
     plt.plot(values, marker=".")
     plt.xlabel('Iterations')
     plt.ylabel('Values')
